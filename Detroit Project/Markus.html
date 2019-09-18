@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+       	<meta name="keywords" content="ITP104, Detroit, Become human, game, PS4, Connor">
+        <meta name="description" content="Detroit, Become Human, Connor introduction page">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <title>Markus</title>
+        <style>
+        html{
+            height:100%;
+            margin:0px;
+            padding:0px;
+        }
+        body{
+            margin:0px;
+            padding:0px;
+            height:100%;
+            font-family: 'Montserrat', sans-serif;
+            color:white;
+        }
+        p{
+            font-size: 130%;
+        }
+
+        #bg{
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(img/MarkusS2.jpg) center/cover no-repeat;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+        }
+        #heading{
+            position: relative;
+            width:auto;
+            height:auto;
+            text-align: center;
+            background-color: black;
+            color:white;
+            vertical-align: middle;
+        }
+        #heading img{
+            width:100%;
+            height:auto;
+            z-index: -1;
+        }
+        #heading p{
+            font-family: 'Montserrat', sans-serif;
+            font-size:40px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            margin:0px;
+            padding-top:6.5px;
+        }
+        #container{
+            width:calc(100% - 280px);
+            height:calc(100% - 120px);
+            margin:0px;
+            padding-top:120px;
+            overflow: hidden;
+        }
+        #content{
+            height:80%;
+            overflow-y: scroll;
+            border:white 1px solid;
+            border-radius: 10px 10px 10px 150px;
+            padding:10px;
+            text-align: justify;
+        }
+        ::-webkit-scrollbar { 
+            display: none; 
+        }
+        #content .rec{
+            border:white 1px solid;
+            height:250px;
+            width:auto;
+            margin-top:20px;
+            border-radius: 10px;
+        }
+        #content .square{
+            border:white 1px solid;
+            width:200px;
+            height:200px;
+            margin-top:20px;
+            border-radius: 10px;
+        }
+        .left{
+            float:left;
+            margin-left: 0px;
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+        .right{
+            float:right;
+            margin-left: 20px;
+            margin-right: 0px;
+            margin-top:20px;
+        }
+        #T{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 60px;
+        }
+
+        #footer{
+            margin-top:20px;
+            border:1px solid black;
+            height:30px;
+            text-align: center;
+            color:white;
+            background-color:#111E2E;
+        }
+        #footer p{
+            margin:0px;
+
+            padding-top:5px;
+        }
+        .clearfloat{
+            clear:both;
+        }
+
+        .nav{
+            overflow: hidden;
+            position: relative;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-top: 20px;
+            width: 140px;
+            height: 140px;
+            float: left;
+            display: block;
+            text-align: center;
+            padding-top: 20px;
+            margin: auto;
+            text-decoration: none;
+            color: white;
+            font-family: American Typewriter, serif;
+        }
+        .nav img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .nav p{
+            font-family: American Typewriter, serif;
+            font-size: 150%;
+        }
+        .nav:hover img{
+            transform: scale(1.05,1.05);
+            transition: all 1s;
+        }
+        .nav img:hover p{
+            transform: scale(1.05,1.05);
+            transition: all 1s;
+        }
+
+        .nav:hover .overlay{
+            visibility:visible;
+        }
+        #home{
+            position:fixed;
+            top:0px;
+            left:0px;
+        }
+        #Connor{
+            position:fixed;
+            top:0px;
+            right:0px;
+        }
+        #Markus img{
+            width:120px;
+            height:120px;
+            border: white 1px solid;
+        }
+        #Markus:hover .overlaymain{
+            visibility:visible;
+        }
+        #Markus{
+            position:fixed;
+            left:0px;
+            bottom:0px;
+        }
+        #Kara{
+            position:fixed;
+            right:0px;
+            bottom:0px;
+        }
+        
+        .overlay{
+            position:absolute;
+			top:0px;
+			left:0px;
+			bottom:0px;
+			right:0px;
+			color:#FFF;
+			text-align: center;
+            visibility: hidden;
+            font-size: 20px;
+            margin-top:59px;
+        }
+
+        .overlaymain{
+            position:absolute;
+			top:0px;
+			left:0px;
+			bottom:0px;
+			right:0px;
+			color:#FFF;
+			text-align: center;
+            visibility: hidden;
+            font-size: 20px;
+            margin-top:70px;
+        }
+
+        #frame1{
+            float:left;
+            width:calc(100% - 40px);
+            height:500px;
+            margin-left:1%;
+            margin-top:10px;
+            margin-bottom:10px;
+            border:0px;
+            padding:5px;
+        }
+	</style>
+    </head>
+    <body>
+        <div id="bg"></div>
+        <div class="nav" id="Home" onclick="location.href='home.html';">
+            <img src="img/home2.jpg" alt="Home">
+            <div class="overlay">
+                Home
+            </div>
+        </div>
+        <div class="nav" id="Connor" onclick="location.href='Connor.html';">
+            <img src="img/Connor.jpg" alt="Connor">
+            <div class="overlay">
+                Connor
+            </div>
+        </div>
+        <div class="nav" id="Markus" onclick="location.href='Markus.html';">
+            <img src="img/Markus.jpg" alt="Markus">
+            <div class="overlaymain">
+                Markus
+            </div>
+        </div>
+        <div class="nav" id="Kara" onclick="location.href='Kara.html';">
+            <img src="img/Kara.jpg" alt="Kara">
+            <div class="overlay">
+                Kara
+            </div>
+        </div>
+        <div id="container">
+            <div id="content">
+                <div id="T">
+                    Markus: The Rebel
+                </div>
+                <h2>"There's something inside me that knows that I am more than what they say. I am alive, and they're not gonna take that from me anymore..."
+- Markus</h2>
+                <img class="rec right" src="img/MarkusS1.jpg" alt="Markus1">
+                <h2>Who is Markus:</h2>
+                <p>
+                    Markus is an RK200 android and one of the three protagonists of Detroit: Become Human.
+                    He is a domestic android owned by famous Detroit painter Carl Manfred.
+                    Events catapult him out of his familiar life and lead him on to freedom and rebellion.
+                    During the game, he may become the leader of the deviants and may direct them in either a violent or peaceful revolt against human oppression and thus decide the future of his race.
+                </p>
+                <div class="clearfloat"></div>
+                <img class="rec left" src="img/MarkusS3.jpg" alt="Markus2">
+                <h2>Behind the Scenes</h2>
+                <p>
+                    Markus is portrayed by Jesse Williams, who provided his likeness, the voice acting and performance capture.
+                    Markus' rendition of "Hold On" was performed by Jua Amir.
+                    Alex Martin did the motion capture stunts for Markus.
+                    In dubbed versions Markus's voice was acted by: Rémi Caillebot (French), Yūya Uchida (Japanese),
+                     Mateusz Weber (Polish), Andrea Oldani (Italian), Stanislav Tikunov (Russian), Sascha Rotermund (German),
+                      Miguel Ángel Leal (Latin American Spanish), Luis Manuel Martín Díaz (European Spanish), Diogo Morgado (European Portuguese), 
+                      Wendel Bezerra (Brazillian Portuguese).
+
+                </p>
+                <div class="clearfloat"></div>
+                <h2>Watch the Trailer!</h2>
+                <iframe id="frame1" src="https://www.youtube.com/embed/sAmKdZdfV1c" allowfullscreen></iframe>
+               <div class="clearfloat"></div>
+            </div>
+        </div>
+        <div class="clearfloat"></div>
+        
+
+    </body>
+
+
+</html>

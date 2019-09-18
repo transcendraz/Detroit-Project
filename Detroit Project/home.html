@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+       	<meta name="keywords" content="ITP104, Detroit, Become human, game, PS4">
+        <meta name="description" content="A website that introduce the PS4 facinating game: Detroit, Become Human">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <title>Detroit Home Page</title>
+        <style>
+        html{
+            margin:0px;
+            padding:0px;
+        }
+        body{
+            margin:0px;
+            padding:0px;
+            height:100%;
+            font-family: 'Montserrat', sans-serif;
+            color:white;
+        }
+        #container{
+            width:1000px;
+            margin:auto;
+        }
+        #con1{
+            position: relative;
+            margin-left:10px;
+            width:180px;
+            left:0px;
+            top:20px;
+            padding:10px;
+            float:left;
+            border: 1px white solid;
+            border-radius: 4px;
+            height: 1208px;
+        }
+        #con1 p{
+            text-align: justify;
+        }
+        #con2{
+            position: relative;
+            margin-right:10px;
+            width:180px;
+            padding:10px;
+            right:0;
+            top:20px;
+            float:right;
+            border: 1px white solid;
+            border-radius: 4px;
+            min-height: 1208px;
+        }
+        #con2 p{
+            text-align: justify
+        }
+        #bg{
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(img/bgall.jpg) center/cover no-repeat;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+        }
+        #heading{
+            position: relative;
+            width:auto;
+            height:auto;
+            text-align: center;
+            background-color: black;
+            color:white;
+            vertical-align: middle;
+        }
+        #heading img{
+            width:100%;
+            height:auto;
+            z-index: -1;
+        }
+        #heading p{
+            font-family: 'Montserrat', sans-serif;
+            font-size:40px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            margin:0px;
+            padding-top:6.5px;
+        }
+        #T{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 100px;
+        }
+        #intro{
+            float:left;
+            width:33%;
+            height:380px;
+        }
+        #intro h1{
+            margin:2px;
+        }
+        #frame1{
+            float:left;
+            width:65%;
+            height:380px;
+            margin-left:1%;
+            margin-top:10px;
+            margin-bottom:10px;
+            border:0px;
+            padding:5px;
+        }
+        #footer{
+            margin-top:20px;
+            border:1px solid black;
+            height:30px;
+            text-align: center;
+            color:white;
+            background-color:#111E2E;
+        }
+        #footer p{
+            margin:0px;
+
+            padding-top:5px;
+        }
+        .clearfloat{
+            clear:both;
+        }
+        .nav{
+            overflow: hidden;
+            position: relative;
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-top: 20px;
+            width: 33%;
+            height: 350px;
+            float: left;
+            display: block;
+            text-align: center;
+            padding-top: 20px;
+            margin: auto;
+            text-decoration: none;
+            color: white;
+            font-family: American Typewriter, serif;
+        }
+        .nav img{
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+        }
+        .nav p{
+            font-family: American Typewriter, serif;
+            font-size: 150%;
+        }
+        .nav:hover img{
+            transform: scale(1.05,1.05);
+            transition: all 1s;
+        }
+        .nav:hover p{
+            transform: scale(1.05,1.05);
+            transition: all 1s;
+        }
+        #adv{
+            position: relative;
+            text-align: center;
+            width:800px;
+            height:100px;
+            margin-left: 100px;
+            overflow: hidden;
+        }
+        #adv:hover{
+            transform: scale(1.05,1.05);
+            transition: all 1s;
+        }
+        #adv:hover #overlay{
+            visibility:visible;
+        }
+        #adv img{
+            position: relative;
+            width:100%;
+
+        }
+        #overlay{
+            position:absolute;
+			top:0px;
+			left:0px;
+			bottom:0px;
+			right:0px;
+			background-color: rgba(0,0,0,0.4);
+			color:#FFF;
+			text-align: center;
+            visibility: hidden;
+            padding-top: 34px;
+            font-size: 25px;
+        }
+
+        @media(max-width:1439px){
+			#con1{
+                display: none;
+            }
+            #con2{
+                display: none;
+            }
+		}
+	</style>
+    </head>
+    <body>
+        <div id="bg"></div>
+        <div id="heading">
+            <img src="img/bg2.jpg" alt="bg">
+            <p>How far will you go to be free</p>
+        </div>
+        <div id="con1">
+            <h2>GamesRadar+ -- 4.5/5</h2>
+                    <p>
+                        "Detroit: Become Human is a game with grand ideals, wonderful levels of polish, 
+                        and tiny imperfections. It's an ambitious, wonderfully executed piece of storytelling, 
+                        and one of the most interesting games of this generation. It will split opinion, 
+                        and give birth to a litany of opinion pieces--some deep and thoughtful, 
+                        others half-baked and sensationalist." -- Andy Hartup
+                    </p>
+                    <h2>GameSpot -- 7/10</h2>
+                    <p>"Things didn't always go the way I wanted, but that was a burden I chose to bear, 
+                        and the story benefitted from my commitment, flowcharts be damned.
+                        After completing the game, I tried to go back and fight my instincts to see what would happen if I chose a darker path. 
+                        It never felt justified nor worthwhile. Detroit is well worth playing, 
+                        but it struggles to strike the right balance between giving you freedom of choice and reminding you that it's all a game in the end. 
+                        Cage and Quantic Dream are getting closer to nailing this style of game, 
+                        but it's obvious that there's still room to grow.." -- Peter Brown
+                    </p>
+
+        </div>
+        <div id="con2">
+                <h2>IGN -- 8/10</h2>
+                <p> Detroit: Become Human is a poignantly pulpy interactive sci-fi drama where your choices 
+                    can impact events to a greater and more satisfying degree than in most games of this type.
+                    Though I wish its story had been handled with a softer touch, especially considering the 
+                    subtlety that can be conveyed through its tech and performances, its well-written and acted 
+                    central trio were vital enough to me that I found myself feeling genuine distress when they
+                    were in danger and a sense of victory when they triumphed. Most importantly, Detroit offers 
+                    a multitude of transparent branching paths that entice further playthroughs, and choices 
+                    have a permanence that raise the stakes throughout.
+                </p>
+                <h2>Metacritics -- 8.7/10</h2>
+                <p>
+                    Areajugones: 
+                    Quantic Dream surpasses everything it has done before with Detroit: Become Human.
+                    A huge script allows for a thrilling story to have multiple layers that, at the 
+                    same time, deal with topics such as slavery, the human condition or the concept 
+                    of identity. A real masterpiece of the genre.
+                </p>
+        </div>
+        <div id="container">
+            <div id="T">Make Your Choices</div>
+            <div id="intro">
+                <h1>
+                    What is Detroit: Become Human?
+                </h1>
+                <p>Detroit: Become Human is an adventure game developed by Quantic Dream and published by Sony Interactive Entertainment for PlayStation 4, 
+                    released worldwide on 25 May 2018. The plot revolves around three androids: Kara (Valorie Curry), 
+                    who escapes the owner she was serving to explore her newfound sentience and protect a young girl; 
+                    Connor (Bryan Dechart), whose job is to hunt down sentient androids; and Markus (Jesse Williams), 
+                    who devotes himself to releasing other androids from servitude.
+                    They may survive or perish depending on dialogue choices that shape the story.</p>
+            </div>
+            <iframe id="frame1" src="https://www.youtube.com/embed/YtPmIBqRwQU" allowfullscreen></iframe>
+            <hr>
+            <h1>Know The Charcters</h1>
+            <div class="nav" onclick="location.href='Connor.html';">
+                <img src="img/Connor.jpg" alt="Connor">
+                <p>Connor</p>
+            </div>
+            <div class="nav" onclick="location.href='Markus.html';">
+                <img src="img/Markus.jpg" alt="Markus">
+                <p>Markus</p>
+            </div>
+            <div class="nav" onclick="location.href='Kara.html';">
+                <img src="img/Kara.jpg" alt="Kara">
+                <p>Kara</p>
+            </div>
+            <h2>Each Characters have their own and unique facinating storylines! Click to view.</h2>
+            <hr>
+            <h1>Buy it now!</h1>
+            <div id="adv" onclick="location.href='https://www.playstation.com/en-us/games/detroit-become-human-ps4/'">
+                <img src="img/adv3.jpg" alt="Detroit Become Human">
+                <div id="overlay">
+                    Buy it now!
+                </div>
+            </div>
+        </div>
+        <div class="clearfloat"></div>
+        <div id="footer">
+            <p>Created by: Chen Tang<p>
+        </div>
+    </body>
+
+
+</html>
